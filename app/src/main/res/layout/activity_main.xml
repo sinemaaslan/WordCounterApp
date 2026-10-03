@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/edtInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_text"
+        android:inputType="textMultiLine"
+        android:autofillHints="text"
+        android:minHeight="48dp"/>
+
+    <Spinner
+        android:id="@+id/spnMetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/metric_options"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/btnCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Count" />
+
+    <TextView
+        android:id="@+id/ResultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="18sp" />
+</LinearLayout>
